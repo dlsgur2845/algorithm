@@ -6,7 +6,7 @@
 
 3. ans 번 만에 찾아지는지를 탐색해야하는데 다음과 같은 규칙 존재
   - cases[2] = case[1] op case[1]
-  - cases[2] = case[2] op case[1]
+  - cases[3] = case[2] op case[1]
                case[1] op case[2]
   - ...
   - cases[8] = case[6] op case[2]
