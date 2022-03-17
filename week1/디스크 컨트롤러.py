@@ -24,7 +24,7 @@ def solution(jobs):
     time=0
     while jobs or waitq:
         while jobs and jobs[0][0] <= time:
-            created, runtime  = jobs.popleft()
+            created, runtime = jobs.popleft()
             heappush(waitq, (runtime, created))
         
         if waitq:
