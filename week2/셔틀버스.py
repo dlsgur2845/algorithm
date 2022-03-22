@@ -1,5 +1,5 @@
 """
-유형 : 구현
+유형 : 큐 (풀이 방법은 많을거라 생각)
 
 * binary_search 함수는 bisect의 bisect_right 함수 와 동작이 동일
   - (timetable의 최대 크기가 2000이라 굳이 안쓰고 순차적으로 index를 찾아도 무방)
