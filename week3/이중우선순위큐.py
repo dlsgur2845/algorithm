@@ -11,7 +11,7 @@ solution_list : 1차원 배열로 구현 - O(N**2)
 solution_heap : max heap, min heap 두개를 동기화 - O(N**2),
   - 동기화 후 heapify를 해주지 않으면 heap 구조 파괴
   ["I 6", "I 2", "I 1", "I 4", "I 5", "I 3", "D 1", "I 7", "D -1", "I 6", "D -1", "D -1"] 경우 [7, 4]가 나오지 않음.
-solution_linked : 링크드 리스트에 삽입 위치 이진 탐색 으로 구현하려했으나 링크드 리스트는 인덱스 찾는데만 O(N)...
+solution_linked : 링크드 리스트에 삽입 위치 이진 탐색 O(N logN) 으로 구현하려했으나 링크드 리스트는 인덱스 찾는데만 O(N)라서 안될 것 같음.
 
 """
 
