@@ -14,7 +14,9 @@
 """
 
 def solution(a, b, g, s, w, t):
-    l, r = min(t), (a+b) * max(t) * 2
+    _min = lambda a,b:a if a<b else b
+    
+    l, r = min(t), (a+b) * 2 * max(t)
     while l <= r:
         m = (l+r)//2
         gold = 0
@@ -26,9 +28,9 @@ def solution(a, b, g, s, w, t):
             if remain >= _t:
                 move+=1
             
-            gold += min(_w*move, _g)
-            silver += min(_w*move, _s)
-            both += min(_w*move, _g+_s)
+            gold += _min(_w*move, _g)
+            silver += _min(_w*move, _s)
+            both += _min(_w*move, _g+_s)
             
         if gold >= a and silver >= b and both >= a+b:
             r = m-1
