@@ -4,7 +4,7 @@ sys.stdin = open('../input.txt', 'r')
 import sys
 input = lambda: sys.stdin.readline().rstrip()
 
-from heapq import heapify, heappush, heappop
+from heapq import heapify, heapreplace
 N = int(input())
 q=list(map(int, input().split()))
 
@@ -14,7 +14,6 @@ for _ in range(N-1):
         num = int(num)
 
         if num > q[0]:
-            heappop(q)
-            heappush(q, num)
+            heapreplace(q, num)
 
-print(heappop(q))
+print(q[0])
